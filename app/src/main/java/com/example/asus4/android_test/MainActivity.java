@@ -3,15 +3,12 @@ package com.example.asus4.android_test;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
-import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
-import com.example.asus4.android_test.constraintlayout.ConstraintLayoutActivity;
-import com.example.asus4.android_test.paint.PaintActivity;
-import com.example.asus4.android_test.progressbar.ProgressBarActivity;
-import com.example.asus4.android_test.shader.ShaderActivity;
-import com.example.asus4.android_test.webvideo.WebVideoActivity;
+import com.example.asus4.android_test.coordinatorLayout.CoordinatorLayoutActivity;
+import com.example.asus4.android_test.fragment.FragmentActivity;
+
 
 public class MainActivity extends AppCompatActivity {
 
@@ -23,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void jumpActivity(View view){
-        startActivity(PaintActivity.class);
+        startActivity(FragmentActivity.class);
     }
 
     private void startActivity(Class<?> cls){
